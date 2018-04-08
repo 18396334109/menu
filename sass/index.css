@@ -4,7 +4,8 @@ html {
   padding: 0px;
   width: 100%;
   height: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #eef5f9; }
 
 .context {
   display: flex;
@@ -26,7 +27,7 @@ html {
     background: #374850;
     color: #999;
     border: 1px solid #374850; }
-  .nav-title .nav-active {
+  .nav-title .nav-active a {
     color: #fff; }
 
 .logo {
@@ -37,7 +38,7 @@ html {
   width: 100px;
   height: 100%;
   float: left;
-  background-color: #222d32; }
+  background-color: #374850; }
   .nav-list ul {
     list-style: none;
     padding: 0px;
@@ -47,8 +48,10 @@ html {
     height: 55px; }
   .nav-list a {
     text-decoration: none;
+    word-break: keep-all;
+    white-space: nowrap;
     color: #8aa4af; }
-  .nav-list .nav-active {
+  .nav-list .nav-active a {
     color: #fff; }
 
 /*# sourceMappingURL=index.css.map */
