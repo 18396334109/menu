@@ -15,37 +15,55 @@
   border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
 
+.lxc-dark {
+  background: #374850; }
+
+.lxc-red {
+  background: #cc4e5a; }
+
+.lxc-blue {
+  background: #02c7f8; }
+
+.lxc-orange {
+  background: orange; }
+
 .lxc-btn-dark {
   background: #374850;
   color: #eef5f9;
   border: 1px solid #374850; }
-
-.lxc-dark {
-  background: #374850; }
 
 .lxc-btn-red {
   background: #cc4e5a;
   color: #fff;
   border: 1px solid #cc4e5a; }
 
-.lxc-red {
-  background: #cc4e5a; }
-
 .lxc-btn-blue {
   background: #02c7f8;
   color: #fff;
   border: 1px solid #02c7f8; }
-
-.lxc-blue {
-  background: #02c7f8; }
 
 .lxc-btn-orange {
   background: orange;
   color: #fff;
   border: 1px solid orange; }
 
-.lxc-orange {
-  background: orange; }
+.lxc-btn-lg {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  border-radius: 0.3rem; }
+
+.lxc-btn-sm {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.775rem;
+  line-height: 1.5;
+  border-radius: 0.3rem; }
+
+.lxc-btn-md {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.985rem;
+  line-height: 1.5;
+  border-radius: 0.3rem; }
 
 .lxc-table {
   width: 100%;
