@@ -1,0 +1,133 @@
+    .lxc-btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    @mixin colorStyle($background, $color) {
+        background: $background;
+        color: $color;
+        border: 1px solid $background;
+    }
+    
+    .lxc-btn-dark {
+        @include colorStyle(#374850, #eef5f9);
+    }
+    
+    .lxc-dark {
+        background: #374850;
+    }
+    
+    .lxc-btn-red {
+        @include colorStyle(#cc4e5a, #fff);
+    }
+    
+    .lxc-red {
+        background: #cc4e5a;
+    }
+    
+    .lxc-btn-blue {
+        @include colorStyle(#02c7f8, #fff);
+    }
+    
+    .lxc-blue {
+        background: #02c7f8;
+    }
+    
+    .lxc-btn-orange {
+        @include colorStyle(orange, #fff);
+    }
+    
+    .lxc-orange {
+        background: orange;
+    }
+    
+    //table
+    @mixin lxc-table-thead($bacColor, $fontColor) {
+        vertical-align: bottom;
+        background-color: $bacColor;
+        color: $fontColor;
+        border-bottom: 2px solid $bacColor;
+        border-top: 2px solid $bacColor;
+        width: 100%;
+        max-width: 100%;
+        th {
+            border-bottom-width: 2px;
+            vertical-align: bottom;
+            border-bottom: 2px solid $bacColor;
+        }
+        td {
+            border-bottom-width: 2px;
+        }
+    }
+    
+    @mixin lxc-th-td($paddingSize, $borderColor) {
+        padding: $paddingSize;
+        vertical-align: top;
+        border-top: 1px solid $borderColor;
+        min-width: 75px;
+    }
+    
+    @mixin lxc-table-tbody($color, $hoverColor) {
+        border-top: 2px solid $color;
+        width: 100%;
+        max-width: 100%;
+        th:hover {
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+        tr:hover {
+            background-color: $hoverColor;
+        }
+    }
+    
+    @mixin lxc-table($headColor, $borderColor, $thFontColor, $hoverColor, $fontSize) {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        font-size: $fontSize;
+        background-color: transparent;
+        border: 1px solid $borderColor;
+        thead {
+            @include lxc-table-thead($headColor, $thFontColor);
+        }
+        tbody {
+            @include lxc-table-tbody($headColor, $hoverColor);
+        }
+        th {
+            @include lxc-th-td(8px, $borderColor);
+        }
+        td {
+            @include lxc-th-td(8px, $borderColor);
+        }
+    }
+    
+    .lxc-table {
+        @include lxc-table(#262626, #f4f4f4, #fff, #f4f4f4, 14px);
+    }
+    
+    .lxc-table-dark {
+        @include lxc-table(#374850, #f4f4f4, #eef5f9, #f4f4f4, 12px)
+    }
+    
+    .scrolling-range {
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }

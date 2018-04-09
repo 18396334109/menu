@@ -71,13 +71,15 @@ const router = [{
 }, ];
 
 function routeinit() {
-    $(".nav-title ul li").click(function() {
+    firstRoute();
+    secondRoute();
+}
 
+function firstRoute() {
+    $(".nav-title ul li").click(function() {
         $(this).siblings('li').removeClass('nav-active');
         $(this).addClass('nav-active');
-
         $('.nav-list ul').empty();
-
         for (let i = 0; i < router.length; i++) {
             if ($(this).children().text() == router[i].firstRoute) {
                 for (let j = 0; j < router[i].secondRoute.length; j++) {
@@ -91,13 +93,11 @@ function routeinit() {
         }
         secondRoute();
     });
-    secondRoute();
 }
 
 function secondRoute() {
     $(".nav-list ul li").click(function() {
         $(this).siblings('li').removeClass('nav-active');
-
         $(this).addClass('nav-active');
     })
 }

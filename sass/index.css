@@ -14,6 +14,11 @@ html {
   height: 100%;
   position: relative; }
 
+.btn-dark {
+  background: #374850;
+  color: #b8c7ce;
+  border: 1px solid #374850; }
+
 .nav-title {
   background: #1a2226; }
   .nav-title a {
@@ -23,10 +28,6 @@ html {
     background: #eef5f9;
     color: #666;
     border: 1px solid #eef5f9; }
-  .nav-title .search-btn {
-    background: #374850;
-    color: #999;
-    border: 1px solid #374850; }
   .nav-title .nav-active a {
     color: #fff; }
 
