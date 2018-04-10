@@ -17,24 +17,39 @@
     }
     
     //color-style
+    @mixin color($color) {
+        background: $color;
+    }
+    
     .lxc-dark {
-        background: #374850;
+        @include color(#374850);
     }
     
     .lxc-red {
-        background: #cc4e5a;
+        @include color(#cc4e5a);
     }
     
     .lxc-blue {
-        background: #02c7f8;
+        @include color(#02c7f8);
     }
     
     .lxc-orange {
-        background: orange;
+        @include color(orange);
+    }
+    
+    //上下居中
+    @mixin center() {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     
     //button-style
-    @mixin colorStyle($background, $color) {
+    @mixin color-style($background, $color) {
         background: $background;
         color: $color;
         border: 1px solid $background;
@@ -48,19 +63,19 @@
     }
     
     .lxc-btn-dark {
-        @include colorStyle(#374850, #eef5f9);
+        @include color-style(#374850, #eef5f9);
     }
     
     .lxc-btn-red {
-        @include colorStyle(#cc4e5a, #fff);
+        @include color-style(#cc4e5a, #fff);
     }
     
     .lxc-btn-blue {
-        @include colorStyle(#02c7f8, #fff);
+        @include color-style(#02c7f8, #fff);
     }
     
     .lxc-btn-orange {
-        @include colorStyle(orange, #fff);
+        @include color-style(orange, #fff);
     }
     
     .lxc-btn-lg {
@@ -76,6 +91,41 @@
     }
     
     //input form
+    @mixin input-addon-style($bacColor, $color, $borderColor) {
+        padding: 4px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        color: $color;
+        background-color: $bacColor;
+        border: 1px solid $borderColor;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    @mixin lxc-form-control-style($color, $borderColor, $focusColor) {
+        color: $color;
+        font-size: 15px;
+        box-shadow: none;
+        border-radius: 2px;
+        border: 1px solid $borderColor;
+        & ::-moz-placeholder {
+            color: #999;
+            opacity: 1;
+        }
+        & :-ms-input-placeholder {
+            color: #999;
+        }
+        & ::-webkit-input-placeholder {
+            color: #999;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $focusColor;
+        }
+    }
+    
     .lxc-form-group {
         margin-bottom: 15px;
         display: inline-block;
@@ -83,54 +133,90 @@
     }
     
     .lxc-form-control {
-        color: #607d8b;
-        font-size: 15px;
-        box-shadow: none;
-        border-radius: 2px;
-        border: 1px solid #e8eef1;
+        @include lxc-form-control-style(#607d8b, #e8eef1, #c8d1d6);
     }
     
-    .lxc-form-control::-moz-placeholder {
-        color: #999;
-        opacity: 1;
+    .lxc-form-control-blue {
+        @include lxc-form-control-style(#607d8b, #43d3f7, #02c7f8);
     }
     
-    .lxc-form-control:-ms-input-placeholder {
-        color: #999;
+    .lxc-form-control-green {
+        @include lxc-form-control-style(#607d8b, #95eb8d, #89e980);
     }
     
-    .lxc-form-control::-webkit-input-placeholder {
-        color: #999;
+    .lxc-form-control-red {
+        @include lxc-form-control-style(#607d8b, #cc4e5a, #cc4e5a);
     }
     
-    .has-error .lxc-form-control {
-        border-color: #ef716e;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    .has-error {
+        .lxc-form-control {
+            border-color: #ef716e;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            &:focus {
+                outline: none;
+                border-color: #ef716e;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            }
+        }
     }
     
-    .has-error .lxc-form-control:focus {
-        border-color: #ef716e;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    .has-success {
+        .lxc-form-control {
+            border-color: #95eb8d;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            &:focus {
+                outline: none;
+                border-color: #95eb8d;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            }
+        }
     }
     
     .lxc-input-group {
-        margin-bottom: 15px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        width: 100%;
+        .lxc-form-control,
+        .lxc-form-control-blue,
+        .lxc-form-control-green,
+        .lxc-form-control-red {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
     }
     
     .lxc-input-group-addon {
-        padding: 6px 12px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1;
-        color: #727d8e;
-        text-align: center;
-        background-color: #f4f5f7;
-        border: 1px solid #e7eaef;
-        border-radius: 4px;
+        @include center();
+        @include input-addon-style(#f4f5f7, #727d8e, #e7eaef)
     }
     
+    .lxc-input-group-addon-blue {
+        @include center();
+        @include input-addon-style(#02c7f8, #fff, #02c7f8);
+    }
+    
+    .lxc-input-group-addon-green {
+        @include center();
+        @include input-addon-style(#95eb8d, #fff, #95eb8d);
+    }
+    
+    .lxc-input-group-addon-red {
+        @include center();
+        @include input-addon-style(#cc4e5a, #fff, #cc4e5a);
+    }
+    
+    //input尺寸控制
     @mixin input-size($paddingSize, $fontSize, $height) {
         padding: $paddingSize/2 $paddingSize;
         font-size: $fontSize;
@@ -227,4 +313,26 @@
         width: 100%;
         min-width: 100%;
         max-width: 100%;
+    }
+    
+    @mixin tags-size($widthSize, $heightSize) {
+        width: $widthSize;
+        height: $heightSize;
+        border-radius: 5px;
+    }
+    
+    //tags
+    .tags-blue {
+        @include tags-size(100px, 75px);
+        @include color(#02c7f8);
+    }
+    
+    .tags-red {
+        @include tags-size(100px, 75px);
+        @include color(#cc4e5a);
+    }
+    
+    .tags-orange {
+        @include tags-size(100px, 75px);
+        @include color(orange);
     }
