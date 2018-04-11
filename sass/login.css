@@ -463,4 +463,68 @@
   border-radius: 5px;
   background: #607d8b; }
 
-/*# sourceMappingURL=linxch.css.map */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px; }
+
+.login {
+  width: 100%;
+  height: 100%;
+  background-color: #eef5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px #999; }
+
+.login-size {
+  width: 100%;
+  height: 60%;
+  position: relative; }
+  .login-size .lxc-form-group input {
+    width: 85%; }
+
+.login-panel {
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  background: #fff; }
+
+.login-title {
+  height: 20%;
+  background-color: #b8c7ce;
+  color: #345678;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f3f7f9; }
+  .login-title h3 {
+    font-size: 20px; }
+
+.login-content {
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.login-footer {
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=login.css.map */

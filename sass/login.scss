@@ -1,0 +1,57 @@
+@import './linxch.scss';
+body,
+html {
+    @include full();
+    padding: 0px;
+    margin: 0px;
+}
+
+.login {
+    @include full();
+    background-color: #eef5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px #999;
+}
+
+.login-size {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    .lxc-form-group {
+        input {
+            width: 85%;
+        }
+    }
+}
+
+.login-panel {
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+}
+
+.login-title {
+    height: 20%;
+    background-color: #b8c7ce;
+    color: #345678;
+    h3 {
+        font-size: 20px;
+    }
+    @include center();
+    border-bottom: 1px solid #f3f7f9;
+}
+
+.login-content {
+    height: 65%;
+    @include center();
+}
+
+.login-footer {
+    height: 15%;
+    @include center();
+    background-color: #ccdce4;
+    color: #5e7a96;
+}
