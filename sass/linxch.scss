@@ -1,3 +1,4 @@
+@charset "utf-8";
 .lxc-btn {
     display: inline-block;
     font-weight: 400;
@@ -42,7 +43,7 @@
     @include color(orange);
 }
 
-//上下居中
+// 上下剧中
 @mixin center() {
     display: -webkit-box;
     display: -ms-flexbox;

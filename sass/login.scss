@@ -29,29 +29,45 @@ html {
 .login-panel {
     border-radius: 5px;
     width: 400px;
-    height: 300px;
+    height: 280px;
     background: #fff;
 }
 
 .login-title {
-    height: 20%;
+    height: 15%;
     background-color: #b8c7ce;
-    color: #345678;
+    color: #f4f4f4;
     h3 {
         font-size: 20px;
     }
     @include center();
     border-bottom: 1px solid #f3f7f9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .login-content {
-    height: 65%;
+    height: 70%;
     @include center();
 }
 
 .login-footer {
+    cursor: pointer;
     height: 15%;
     @include center();
     background-color: #ccdce4;
     color: #5e7a96;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    &:hover {
+        background-color: #ccdce4bd;
+        color: #89b0d6;
+    }
+}
+
+.login-span {
+    font-size: 12px;
+    float: right;
+    cursor: pointer;
+    color: #3032a3
 }
