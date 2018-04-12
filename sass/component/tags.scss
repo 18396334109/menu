@@ -1,4 +1,4 @@
-@import './color.scss';
+@import '../common/color.scss';
 //tags
 @mixin tags-size($widthSize, $heightSize) {
     width: $widthSize;
@@ -40,25 +40,25 @@
 
 .tags-blue {
     @include tags-size(100px, 75px);
-    @include color(#02c7f8);
+    @include baccolor(#02c7f8);
 }
 
 .tags-red {
     @include tags-size(100px, 75px);
-    @include color(#cc4e5a);
+    @include baccolor(#cc4e5a);
 }
 
 .tags-orange {
     @include tags-size(100px, 75px);
-    @include color(orange);
+    @include baccolor(orange);
 }
 
 .tags-green {
     @include tags-size(100px, 75px);
-    @include color(#95eb8d);
+    @include baccolor(#95eb8d);
 }
 
 .tags-gray {
     @include tags-size(100px, 75px);
-    @include color(#607d8b);
+    @include baccolor(#607d8b);
 }

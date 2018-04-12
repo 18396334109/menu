@@ -1,0 +1,31 @@
+.bv-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@each $color in $array-color {
+    $get-color: map-get($colors, $color);
+    .bv-btn-#{$color} {
+        @include button-style($get-color, $color-wh);
+    }
+}
+
+@each $size in $array-btn-size {
+    $get-size: map-get($btn-size, $size);
+    .bv-btn-#{$size} {
+        @include btn-size($get-size, $get-size);
+    }
+}

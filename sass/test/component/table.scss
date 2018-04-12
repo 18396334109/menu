@@ -1,0 +1,18 @@
+.scrolling-range {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.bv-table {
+    @include bv-table(#262626, #f4f4f4, #fff, #f4f4f4, 14px);
+}
+
+.bv-table-dark {
+    @include bv-table(#374850, #f4f4f4, #eef5f9, #f4f4f4, 12px)
+}

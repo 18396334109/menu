@@ -1,4 +1,4 @@
-.lxc-btn {
+.bv-btn {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -15,69 +15,69 @@
   border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
 
-.lxc-dark {
+.bv-dark {
   background: #374850; }
 
-.lxc-red {
+.bv-red {
   background: #cc4e5a; }
 
-.lxc-blue {
+.bv-blue {
   background: #02c7f8; }
 
-.lxc-orange {
+.bv-orange {
   background: orange; }
 
-.lxc-btn-dark {
+.bv-btn-dark {
   background: #374850;
   color: #eef5f9;
   border: 1px solid #374850; }
-  .lxc-btn-dark:focus {
+  .bv-btn-dark:focus {
     outline: none;
     border: 1px solid #374850; }
 
-.lxc-btn-red {
+.bv-btn-red {
   background: #cc4e5a;
   color: #fff;
   border: 1px solid #cc4e5a; }
-  .lxc-btn-red:focus {
+  .bv-btn-red:focus {
     outline: none;
     border: 1px solid #cc4e5a; }
 
-.lxc-btn-blue {
+.bv-btn-blue {
   background: #02c7f8;
   color: #fff;
   border: 1px solid #02c7f8; }
-  .lxc-btn-blue:focus {
+  .bv-btn-blue:focus {
     outline: none;
     border: 1px solid #02c7f8; }
 
-.lxc-btn-orange {
+.bv-btn-orange {
   background: orange;
   color: #fff;
   border: 1px solid orange; }
-  .lxc-btn-orange:focus {
+  .bv-btn-orange:focus {
     outline: none;
     border: 1px solid orange; }
 
-.lxc-btn-lg {
+.bv-btn-lg {
   padding: 0.4rem 0.8rem;
   font-size: 1.15rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.lxc-btn-sm {
+.bv-btn-sm {
   padding: 0.2rem 0.4rem;
   font-size: 0.775rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.lxc-btn-md {
+.bv-btn-md {
   padding: 0.3rem 0.6rem;
   font-size: 0.985rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.lxc-form-group {
+.bv-form-group {
   margin-bottom: 15px;
   display: inline-block;
   width: 100%;
@@ -89,113 +89,113 @@
   align-items: center;
   justify-content: center; }
 
-.lxc-form-control {
+.bv-form-control {
   color: #607d8b;
   font-size: 13px;
   box-shadow: none;
   border-radius: 2px;
   border: 1px solid #e8eef1; }
-  .lxc-form-control ::-moz-placeholder {
+  .bv-form-control ::-moz-placeholder {
     color: #ddd;
     opacity: 1; }
-  .lxc-form-control :-ms-input-placeholder {
+  .bv-form-control :-ms-input-placeholder {
     color: #ddd; }
-  .lxc-form-control ::-webkit-input-placeholder {
+  .bv-form-control ::-webkit-input-placeholder {
     color: #ddd; }
-  .lxc-form-control:focus {
+  .bv-form-control:focus {
     outline: none;
     border: 1px solid #c8d1d6; }
 
-.lxc-form-control-dark {
+.bv-form-control-dark {
   background: #f3f7f9;
   color: #607d8b;
   font-size: 13px;
   box-shadow: none;
   border-radius: 2px;
   border: 1px solid #e8eef1; }
-  .lxc-form-control-dark ::-moz-placeholder {
+  .bv-form-control-dark ::-moz-placeholder {
     color: #ddd;
     opacity: 1; }
-  .lxc-form-control-dark :-ms-input-placeholder {
+  .bv-form-control-dark :-ms-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-dark ::-webkit-input-placeholder {
+  .bv-form-control-dark ::-webkit-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-dark:focus {
+  .bv-form-control-dark:focus {
     outline: none;
     border: 1px solid #c8d1d6; }
 
-.lxc-form-control-blue {
+.bv-form-control-blue {
   color: #607d8b;
   font-size: 13px;
   box-shadow: none;
   border-radius: 2px;
   border: 1px solid #43d3f7; }
-  .lxc-form-control-blue ::-moz-placeholder {
+  .bv-form-control-blue ::-moz-placeholder {
     color: #ddd;
     opacity: 1; }
-  .lxc-form-control-blue :-ms-input-placeholder {
+  .bv-form-control-blue :-ms-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-blue ::-webkit-input-placeholder {
+  .bv-form-control-blue ::-webkit-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-blue:focus {
+  .bv-form-control-blue:focus {
     outline: none;
     border: 1px solid #02c7f8; }
 
-.lxc-form-control-green {
+.bv-form-control-green {
   color: #607d8b;
   font-size: 13px;
   box-shadow: none;
   border-radius: 2px;
   border: 1px solid #95eb8d; }
-  .lxc-form-control-green ::-moz-placeholder {
+  .bv-form-control-green ::-moz-placeholder {
     color: #ddd;
     opacity: 1; }
-  .lxc-form-control-green :-ms-input-placeholder {
+  .bv-form-control-green :-ms-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-green ::-webkit-input-placeholder {
+  .bv-form-control-green ::-webkit-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-green:focus {
+  .bv-form-control-green:focus {
     outline: none;
     border: 1px solid #89e980; }
 
-.lxc-form-control-red {
+.bv-form-control-red {
   color: #607d8b;
   font-size: 13px;
   box-shadow: none;
   border-radius: 2px;
   border: 1px solid #cc4e5a; }
-  .lxc-form-control-red ::-moz-placeholder {
+  .bv-form-control-red ::-moz-placeholder {
     color: #ddd;
     opacity: 1; }
-  .lxc-form-control-red :-ms-input-placeholder {
+  .bv-form-control-red :-ms-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-red ::-webkit-input-placeholder {
+  .bv-form-control-red ::-webkit-input-placeholder {
     color: #ddd; }
-  .lxc-form-control-red:focus {
+  .bv-form-control-red:focus {
     outline: none;
     border: 1px solid #cc4e5a; }
 
-.has-error .lxc-form-control {
+.has-error .bv-form-control {
   border-color: #ef716e;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-error .lxc-form-control:focus {
+  .has-error .bv-form-control:focus {
     outline: none;
     border-color: #ef716e;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-.has-success .lxc-form-control {
+.has-success .bv-form-control {
   border-color: #95eb8d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-  .has-success .lxc-form-control:focus {
+  .has-success .bv-form-control:focus {
     outline: none;
     border-color: #95eb8d;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-.lxc-input-group {
+.bv-input-group {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,14 +206,14 @@
   -ms-flex-align: stretch;
   align-items: stretch;
   width: 100%; }
-  .lxc-input-group .lxc-form-control,
-  .lxc-input-group .lxc-form-control-blue,
-  .lxc-input-group .lxc-form-control-green,
-  .lxc-input-group .lxc-form-control-red {
+  .bv-input-group .bv-form-control,
+  .bv-input-group .bv-form-control-blue,
+  .bv-input-group .bv-form-control-green,
+  .bv-input-group .bv-form-control-red {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
 
-.lxc-input-group-addon {
+.bv-input-group-addon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +232,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.lxc-input-group-addon-blue {
+.bv-input-group-addon-blue {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +251,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.lxc-input-group-addon-green {
+.bv-input-group-addon-green {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +270,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.lxc-input-group-addon-red {
+.bv-input-group-addon-red {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,35 +289,35 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.lxc-input-lg {
+.bv-input-lg {
   padding: 0.4rem 0.8rem;
   font-size: 1.15rem;
   line-height: 1.5;
   border-radius: 0.3rem;
   height: 40px; }
 
-.lxc-input-md {
+.bv-input-md {
   padding: 0.3rem 0.6rem;
   font-size: 0.985rem;
   line-height: 1.5;
   border-radius: 0.3rem;
   height: 30px; }
 
-.lxc-input-sm {
+.bv-input-sm {
   padding: 0.2rem 0.4rem;
   font-size: 0.775rem;
   line-height: 1.5;
   border-radius: 0.3rem;
   height: 25px; }
 
-.lxc-table {
+.bv-table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
   font-size: 14px;
   background-color: transparent;
   border: 1px solid #f4f4f4; }
-  .lxc-table thead {
+  .bv-table thead {
     vertical-align: bottom;
     background-color: #262626;
     color: #fff;
@@ -325,39 +325,39 @@
     border-top: 2px solid #262626;
     width: 100%;
     max-width: 100%; }
-    .lxc-table thead th {
+    .bv-table thead th {
       border-bottom-width: 2px;
       vertical-align: bottom;
       border-bottom: 2px solid #262626; }
-    .lxc-table thead td {
+    .bv-table thead td {
       border-bottom-width: 2px; }
-  .lxc-table tbody {
+  .bv-table tbody {
     border-top: 2px solid #262626;
     width: 100%;
     max-width: 100%; }
-    .lxc-table tbody th:hover {
+    .bv-table tbody th:hover {
       background-color: rgba(0, 0, 0, 0.075); }
-    .lxc-table tbody tr:hover {
+    .bv-table tbody tr:hover {
       background-color: #f4f4f4; }
-  .lxc-table th {
+  .bv-table th {
     padding: 8px;
     vertical-align: top;
     border-top: 1px solid #f4f4f4;
     min-width: 75px; }
-  .lxc-table td {
+  .bv-table td {
     padding: 8px;
     vertical-align: top;
     border-top: 1px solid #f4f4f4;
     min-width: 75px; }
 
-.lxc-table-dark {
+.bv-table-dark {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1rem;
   font-size: 12px;
   background-color: transparent;
   border: 1px solid #f4f4f4; }
-  .lxc-table-dark thead {
+  .bv-table-dark thead {
     vertical-align: bottom;
     background-color: #374850;
     color: #eef5f9;
@@ -365,26 +365,26 @@
     border-top: 2px solid #374850;
     width: 100%;
     max-width: 100%; }
-    .lxc-table-dark thead th {
+    .bv-table-dark thead th {
       border-bottom-width: 2px;
       vertical-align: bottom;
       border-bottom: 2px solid #374850; }
-    .lxc-table-dark thead td {
+    .bv-table-dark thead td {
       border-bottom-width: 2px; }
-  .lxc-table-dark tbody {
+  .bv-table-dark tbody {
     border-top: 2px solid #374850;
     width: 100%;
     max-width: 100%; }
-    .lxc-table-dark tbody th:hover {
+    .bv-table-dark tbody th:hover {
       background-color: rgba(0, 0, 0, 0.075); }
-    .lxc-table-dark tbody tr:hover {
+    .bv-table-dark tbody tr:hover {
       background-color: #f4f4f4; }
-  .lxc-table-dark th {
+  .bv-table-dark th {
     padding: 8px;
     vertical-align: top;
     border-top: 1px solid #f4f4f4;
     min-width: 75px; }
-  .lxc-table-dark td {
+  .bv-table-dark td {
     padding: 8px;
     vertical-align: top;
     border-top: 1px solid #f4f4f4;
@@ -483,11 +483,11 @@ html {
   width: 100%;
   height: 60%;
   position: relative; }
-  .login-size .lxc-form-group input {
-    width: 85%; }
+  .login-size .bv-form-group input {
+    width: 80%; }
 
 .login-panel {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 400px;
   height: 280px;
   background: #fff; }
@@ -507,7 +507,7 @@ html {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px; }
   .login-title h3 {
-    font-size: 20px; }
+    font-size: 16px; }
 
 .login-content {
   height: 70%;

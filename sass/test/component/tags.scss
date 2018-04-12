@@ -1,0 +1,40 @@
+//tags
+.tags-list {
+    list-style: none;
+    padding-left: 0px;
+    li {
+        margin: 5px;
+        float: left;
+    }
+}
+
+.tags-title {
+    height: 20%;
+    color: $color-wh;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tags-content {
+    height: 60%;
+    color: $color-wh;
+    width: 100%;
+    @include center();
+}
+
+.tags-footer {
+    font-size: 12px;
+    height: 20%;
+    color: $color-wh;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+@each $color in $array-color {
+    $get-color: map-get($colors, $color);
+    .tags-#{$color} {
+        @include tags-size(100px, 75px);
+        @include bac-color($get-color);
+    }
+}

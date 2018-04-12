@@ -1,0 +1,47 @@
+//color
+$input-color:#607d8b;
+$color-wh:#f4f4f4;
+$color-bk:#2c2c2c;
+$color-gy: #607d8b;
+$color-dark: #374850;
+$color-primary:#445092;
+$color-danger:#cc4e5a;
+$color-info:#02c7f8;
+$color-warn:orange;
+$color-success:#7ce25d;
+$colors: ( wh: $color-wh, dark: $color-dark, bk:$color-bk, danger:$color-danger, warn:$color-warn, info:$color-info, primary:$color-primary, success:$color-success, gy:$color-gy);
+$array-color: wh,
+bk,
+dark,
+warn,
+info,
+primary,
+danger,
+success,
+gy;
+//font-size
+$font-size-base: 14px;
+$font-size-lg: ceil(($font-size-base * 1.50)); // ~21px
+$font-size-md: ceil(($font-size-base * 1.14)); // ~16px
+$font-size-sm: ceil(($font-size-base * 0.91)); // ~13px
+$font-size-xs: ceil(($font-size-base * 0.85)); // ~12px
+$font-size-xxs: ceil(($font-size-base * 0.75)); // ~10px
+//btn-size
+$btn-size-lg:0.8rem;
+$btn-size-md:0.6rem;
+$btn-size-sm:0.4rem;
+$btn-size: (lg:$btn-size-lg, md:$btn-size-md, sm:$btn-size-sm);
+$array-btn-size:lg,
+md,
+sm;
+//input-size
+$input-size-lg:0.8rem;
+$input-size-md:0.6rem;
+$input-size-sm:0.4rem;
+$input-size: (lg:$input-size-lg, md:$input-size-md, sm:$input-size-sm);
+$array-input-size:lg,
+md,
+sm;
+$input-lg-h:40px;
+$input-md-h:30px;
+$input-md-h:25px;

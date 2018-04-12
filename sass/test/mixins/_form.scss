@@ -1,0 +1,42 @@
+@mixin input-addon-style($bacColor, $color, $borderColor) {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: $color;
+    background-color: $bacColor;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@mixin bv-form-control-style($color, $borderColor, $focusColor) {
+    color: $color;
+    font-size: 13px;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid $borderColor;
+    & ::-moz-placeholder {
+        color: #ddd;
+        opacity: 1;
+    }
+    & :-ms-input-placeholder {
+        color: #ddd;
+    }
+    & ::-webkit-input-placeholder {
+        color: #ddd;
+    }
+    &:focus {
+        outline: none;
+        border: 1px solid $focusColor;
+    }
+}
+
+@mixin input-size($paddingSize, $fontSize) {
+    padding: $paddingSize/2 $paddingSize;
+    font-size: $fontSize;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    // height: $height;
+}

@@ -1,0 +1,61 @@
+//input form
+.bv-form-group {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    @include center();
+}
+
+.bv-form-control {
+    @include bv-form-control-style(#607d8b, #e8eef1, #c8d1d6);
+}
+
+.bv-form-control-wh {
+    background-color: #f4f4f4;
+}
+
+@each $color in $array-color {
+    $get-color: map-get($colors, $color);
+    .bv-form-control-#{$color} {
+        @include bv-form-control-style($input-color, $get-color, $get-color);
+    }
+}
+
+.bv-input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    @each $color in $array-color {
+        .bv-form-control-#{$color} {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}
+
+@each $color in $array-color {
+    $get-color: map-get($colors, $color);
+    .bv-input-group-addon-#{$color} {
+        @include center();
+        @include input-addon-style($get-color, #fff, $get-color);
+    }
+}
+
+.bv-input-group-addon {
+    @include center();
+    @include input-addon-style(#f4f5f7, #727d8e, #e7eaef)
+}
+
+@each $size in $array-input-size {
+    $get-size: map-get($input-size, $size);
+    .bv-input-#{$size} {
+        @include input-size($get-size, $get-size+0.375rem);
+    }
+}

@@ -1,0 +1,20 @@
+//color-style
+@mixin baccolor($color) {
+    background: $color;
+}
+
+.bv-dark {
+    @include baccolor(#374850);
+}
+
+.bv-red {
+    @include baccolor(#cc4e5a);
+}
+
+.bv-blue {
+    @include baccolor(#02c7f8);
+}
+
+.bv-orange {
+    @include baccolor(orange);
+}

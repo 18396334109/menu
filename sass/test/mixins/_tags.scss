@@ -1,0 +1,5 @@
+@mixin tags-size($widthSize, $heightSize) {
+    width: $widthSize;
+    height: $heightSize;
+    border-radius: 5px;
+}

@@ -1,0 +1,57 @@
+@mixin bv-table-thead($bacColor, $fontColor) {
+    vertical-align: bottom;
+    background-color: $bacColor;
+    color: $fontColor;
+    border-bottom: 2px solid $bacColor;
+    border-top: 2px solid $bacColor;
+    width: 100%;
+    max-width: 100%;
+    th {
+        border-bottom-width: 2px;
+        vertical-align: bottom;
+        border-bottom: 2px solid $bacColor;
+    }
+    td {
+        border-bottom-width: 2px;
+    }
+}
+
+@mixin bv-th-td($paddingSize, $borderColor) {
+    padding: $paddingSize;
+    vertical-align: top;
+    border-top: 1px solid $borderColor;
+    min-width: 75px;
+}
+
+@mixin bv-table-tbody($color, $hoverColor) {
+    border-top: 2px solid $color;
+    width: 100%;
+    max-width: 100%;
+    th:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+    tr:hover {
+        background-color: $hoverColor;
+    }
+}
+
+@mixin bv-table($headColor, $borderColor, $thFontColor, $hoverColor, $fontSize) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    font-size: $fontSize;
+    background-color: transparent;
+    border: 1px solid $borderColor;
+    thead {
+        @include bv-table-thead($headColor, $thFontColor);
+    }
+    tbody {
+        @include bv-table-tbody($headColor, $hoverColor);
+    }
+    th {
+        @include bv-th-td(8px, $borderColor);
+    }
+    td {
+        @include bv-th-td(8px, $borderColor);
+    }
+}
