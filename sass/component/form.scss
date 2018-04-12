@@ -1,0 +1,153 @@
+@import '../common/common.scss';
+//input form
+@mixin input-addon-style($bacColor, $color, $borderColor) {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: $color;
+    background-color: $bacColor;
+    border: 1px solid $borderColor;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@mixin bv-form-control-style($color, $borderColor, $focusColor) {
+    color: $color;
+    font-size: 13px;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid $borderColor;
+    & ::-moz-placeholder {
+        color: #ddd;
+        opacity: 1;
+    }
+    & :-ms-input-placeholder {
+        color: #ddd;
+    }
+    & ::-webkit-input-placeholder {
+        color: #ddd;
+    }
+    &:focus {
+        outline: none;
+        border: 1px solid $focusColor;
+    }
+}
+
+.bv-form-group {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    @include center();
+}
+
+.bv-form-control {
+    @include bv-form-control-style(#607d8b, #e8eef1, #c8d1d6);
+}
+
+.bv-form-control-dark {
+    background: #f3f7f9;
+    @include bv-form-control-style(#607d8b, #e8eef1, #c8d1d6);
+}
+
+.bv-form-control-blue {
+    @include bv-form-control-style(#607d8b, #43d3f7, #02c7f8);
+}
+
+.bv-form-control-green {
+    @include bv-form-control-style(#607d8b, #95eb8d, #89e980);
+}
+
+.bv-form-control-red {
+    @include bv-form-control-style(#607d8b, #cc4e5a, #cc4e5a);
+}
+
+.has-error {
+    .bv-form-control {
+        border-color: #ef716e;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        &:focus {
+            outline: none;
+            border-color: #ef716e;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        }
+    }
+}
+
+.has-success {
+    .bv-form-control {
+        border-color: #95eb8d;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        &:focus {
+            outline: none;
+            border-color: #95eb8d;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        }
+    }
+}
+
+.bv-input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    .bv-form-control,
+    .bv-form-control-blue,
+    .bv-form-control-green,
+    .bv-form-control-red {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.bv-input-group-addon {
+    @include center();
+    @include input-addon-style(#f4f5f7, #727d8e, #e7eaef)
+}
+
+.bv-input-group-addon-blue {
+    @include center();
+    @include input-addon-style(#02c7f8, #fff, #02c7f8);
+}
+
+.bv-input-group-addon-green {
+    @include center();
+    @include input-addon-style(#95eb8d, #fff, #95eb8d);
+}
+
+.bv-input-group-addon-red {
+    @include center();
+    @include input-addon-style(#cc4e5a, #fff, #cc4e5a);
+}
+
+//input尺寸控制
+@mixin input-size($paddingSize, $fontSize, $height) {
+    padding: $paddingSize/2 $paddingSize;
+    font-size: $fontSize;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    height: $height;
+}
+
+.bv-input-lg {
+    @include input-size(0.8rem, 1.15rem, 40px);
+}
+
+.bv-input-md {
+    @include input-size(0.6rem, 0.985rem, 30px);
+}
+
+.bv-input-sm {
+    @include input-size(0.4rem, 0.775rem, 25px);
+}

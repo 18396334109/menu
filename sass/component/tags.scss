@@ -1,0 +1,64 @@
+@import './color.scss';
+//tags
+@mixin tags-size($widthSize, $heightSize) {
+    width: $widthSize;
+    height: $heightSize;
+    border-radius: 5px;
+}
+
+.tags-list {
+    list-style: none;
+    padding-left: 0px;
+    li {
+        margin: 5px;
+        float: left;
+    }
+}
+
+.tags-title {
+    height: 20%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tags-content {
+    height: 60%;
+    color: #fff;
+    width: 100%;
+    @include center();
+}
+
+.tags-footer {
+    font-size: 12px;
+    height: 20%;
+    color: #fff;
+    width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.tags-blue {
+    @include tags-size(100px, 75px);
+    @include color(#02c7f8);
+}
+
+.tags-red {
+    @include tags-size(100px, 75px);
+    @include color(#cc4e5a);
+}
+
+.tags-orange {
+    @include tags-size(100px, 75px);
+    @include color(orange);
+}
+
+.tags-green {
+    @include tags-size(100px, 75px);
+    @include color(#95eb8d);
+}
+
+.tags-gray {
+    @include tags-size(100px, 75px);
+    @include color(#607d8b);
+}

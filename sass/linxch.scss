@@ -1,5 +1,5 @@
 @charset "utf-8";
-.lxc-btn {
+.bv-btn {
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -27,19 +27,19 @@
     background: $color;
 }
 
-.lxc-dark {
+.bv-dark {
     @include color(#374850);
 }
 
-.lxc-red {
+.bv-red {
     @include color(#cc4e5a);
 }
 
-.lxc-blue {
+.bv-blue {
     @include color(#02c7f8);
 }
 
-.lxc-orange {
+.bv-orange {
     @include color(orange);
 }
 
@@ -68,7 +68,7 @@
     border-radius: 0.3rem;
 }
 
-.lxc-btn-dark {
+.bv-btn-dark {
     @include color-style(#374850, #eef5f9);
     &:focus {
         outline: none;
@@ -76,7 +76,7 @@
     }
 }
 
-.lxc-btn-red {
+.bv-btn-red {
     @include color-style(#cc4e5a, #fff);
     &:focus {
         outline: none;
@@ -84,7 +84,7 @@
     }
 }
 
-.lxc-btn-blue {
+.bv-btn-blue {
     @include color-style(#02c7f8, #fff);
     &:focus {
         outline: none;
@@ -92,7 +92,7 @@
     }
 }
 
-.lxc-btn-orange {
+.bv-btn-orange {
     @include color-style(orange, #fff);
     &:focus {
         outline: none;
@@ -100,15 +100,15 @@
     }
 }
 
-.lxc-btn-lg {
+.bv-btn-lg {
     @include btn-size(0.8rem, 1.15rem);
 }
 
-.lxc-btn-sm {
+.bv-btn-sm {
     @include btn-size(0.4rem, 0.775rem);
 }
 
-.lxc-btn-md {
+.bv-btn-md {
     @include btn-size(0.6rem, 0.985rem);
 }
 
@@ -126,7 +126,7 @@
     border-bottom-right-radius: 0;
 }
 
-@mixin lxc-form-control-style($color, $borderColor, $focusColor) {
+@mixin bv-form-control-style($color, $borderColor, $focusColor) {
     color: $color;
     font-size: 13px;
     box-shadow: none;
@@ -148,36 +148,36 @@
     }
 }
 
-.lxc-form-group {
+.bv-form-group {
     margin-bottom: 15px;
     display: inline-block;
     width: 100%;
     @include center();
 }
 
-.lxc-form-control {
-    @include lxc-form-control-style(#607d8b, #e8eef1, #c8d1d6);
+.bv-form-control {
+    @include bv-form-control-style(#607d8b, #e8eef1, #c8d1d6);
 }
 
-.lxc-form-control-dark {
+.bv-form-control-dark {
     background: #f3f7f9;
-    @include lxc-form-control-style(#607d8b, #e8eef1, #c8d1d6);
+    @include bv-form-control-style(#607d8b, #e8eef1, #c8d1d6);
 }
 
-.lxc-form-control-blue {
-    @include lxc-form-control-style(#607d8b, #43d3f7, #02c7f8);
+.bv-form-control-blue {
+    @include bv-form-control-style(#607d8b, #43d3f7, #02c7f8);
 }
 
-.lxc-form-control-green {
-    @include lxc-form-control-style(#607d8b, #95eb8d, #89e980);
+.bv-form-control-green {
+    @include bv-form-control-style(#607d8b, #95eb8d, #89e980);
 }
 
-.lxc-form-control-red {
-    @include lxc-form-control-style(#607d8b, #cc4e5a, #cc4e5a);
+.bv-form-control-red {
+    @include bv-form-control-style(#607d8b, #cc4e5a, #cc4e5a);
 }
 
 .has-error {
-    .lxc-form-control {
+    .bv-form-control {
         border-color: #ef716e;
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -191,7 +191,7 @@
 }
 
 .has-success {
-    .lxc-form-control {
+    .bv-form-control {
         border-color: #95eb8d;
         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
@@ -204,7 +204,7 @@
     }
 }
 
-.lxc-input-group {
+.bv-input-group {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,31 +215,31 @@
     -ms-flex-align: stretch;
     align-items: stretch;
     width: 100%;
-    .lxc-form-control,
-    .lxc-form-control-blue,
-    .lxc-form-control-green,
-    .lxc-form-control-red {
+    .bv-form-control,
+    .bv-form-control-blue,
+    .bv-form-control-green,
+    .bv-form-control-red {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
     }
 }
 
-.lxc-input-group-addon {
+.bv-input-group-addon {
     @include center();
     @include input-addon-style(#f4f5f7, #727d8e, #e7eaef)
 }
 
-.lxc-input-group-addon-blue {
+.bv-input-group-addon-blue {
     @include center();
     @include input-addon-style(#02c7f8, #fff, #02c7f8);
 }
 
-.lxc-input-group-addon-green {
+.bv-input-group-addon-green {
     @include center();
     @include input-addon-style(#95eb8d, #fff, #95eb8d);
 }
 
-.lxc-input-group-addon-red {
+.bv-input-group-addon-red {
     @include center();
     @include input-addon-style(#cc4e5a, #fff, #cc4e5a);
 }
@@ -253,20 +253,20 @@
     height: $height;
 }
 
-.lxc-input-lg {
+.bv-input-lg {
     @include input-size(0.8rem, 1.15rem, 40px);
 }
 
-.lxc-input-md {
+.bv-input-md {
     @include input-size(0.6rem, 0.985rem, 30px);
 }
 
-.lxc-input-sm {
+.bv-input-sm {
     @include input-size(0.4rem, 0.775rem, 25px);
 }
 
 //table
-@mixin lxc-table-thead($bacColor, $fontColor) {
+@mixin bv-table-thead($bacColor, $fontColor) {
     vertical-align: bottom;
     background-color: $bacColor;
     color: $fontColor;
@@ -284,14 +284,14 @@
     }
 }
 
-@mixin lxc-th-td($paddingSize, $borderColor) {
+@mixin bv-th-td($paddingSize, $borderColor) {
     padding: $paddingSize;
     vertical-align: top;
     border-top: 1px solid $borderColor;
     min-width: 75px;
 }
 
-@mixin lxc-table-tbody($color, $hoverColor) {
+@mixin bv-table-tbody($color, $hoverColor) {
     border-top: 2px solid $color;
     width: 100%;
     max-width: 100%;
@@ -303,7 +303,7 @@
     }
 }
 
-@mixin lxc-table($headColor, $borderColor, $thFontColor, $hoverColor, $fontSize) {
+@mixin bv-table($headColor, $borderColor, $thFontColor, $hoverColor, $fontSize) {
     width: 100%;
     max-width: 100%;
     margin-bottom: 1rem;
@@ -311,25 +311,25 @@
     background-color: transparent;
     border: 1px solid $borderColor;
     thead {
-        @include lxc-table-thead($headColor, $thFontColor);
+        @include bv-table-thead($headColor, $thFontColor);
     }
     tbody {
-        @include lxc-table-tbody($headColor, $hoverColor);
+        @include bv-table-tbody($headColor, $hoverColor);
     }
     th {
-        @include lxc-th-td(8px, $borderColor);
+        @include bv-th-td(8px, $borderColor);
     }
     td {
-        @include lxc-th-td(8px, $borderColor);
+        @include bv-th-td(8px, $borderColor);
     }
 }
 
-.lxc-table {
-    @include lxc-table(#262626, #f4f4f4, #fff, #f4f4f4, 14px);
+.bv-table {
+    @include bv-table(#262626, #f4f4f4, #fff, #f4f4f4, 14px);
 }
 
-.lxc-table-dark {
-    @include lxc-table(#374850, #f4f4f4, #eef5f9, #f4f4f4, 12px)
+.bv-table-dark {
+    @include bv-table(#374850, #f4f4f4, #eef5f9, #f4f4f4, 12px)
 }
 
 .scrolling-range {

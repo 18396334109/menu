@@ -1,0 +1,75 @@
+.bv-btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+//button-style
+@mixin color-style($background, $color) {
+    background: $background;
+    color: $color;
+    border: 1px solid $background;
+}
+
+@mixin btn-size($paddingSize, $fontSize) {
+    padding: $paddingSize/2 $paddingSize;
+    font-size: $fontSize;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.bv-btn-dark {
+    @include color-style(#374850, #eef5f9);
+    &:focus {
+        outline: none;
+        border: 1px solid #374850;
+    }
+}
+
+.bv-btn-red {
+    @include color-style(#cc4e5a, #fff);
+    &:focus {
+        outline: none;
+        border: 1px solid #cc4e5a;
+    }
+}
+
+.bv-btn-blue {
+    @include color-style(#02c7f8, #fff);
+    &:focus {
+        outline: none;
+        border: 1px solid #02c7f8;
+    }
+}
+
+.bv-btn-orange {
+    @include color-style(orange, #fff);
+    &:focus {
+        outline: none;
+        border: 1px solid orange;
+    }
+}
+
+.bv-btn-lg {
+    @include btn-size(0.8rem, 1.15rem);
+}
+
+.bv-btn-sm {
+    @include btn-size(0.4rem, 0.775rem);
+}
+
+.bv-btn-md {
+    @include btn-size(0.6rem, 0.985rem);
+}
